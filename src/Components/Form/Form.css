@@ -1,0 +1,59 @@
+.input{
+    color: black;
+    border-radius: 20px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+}
+
+.search{
+    position: relative;
+    top: -100px;
+    right: -500px;
+}
+
+.search button{
+    width: 80px;
+}
+.container{
+    border-radius: 50px;
+}
+.buscar{
+    position: relative;
+    top:10px;
+}
+
+
+@media (max-width:480px){
+    .search{
+        font-size:25px;
+        position: relative;
+        top:50px;
+        left:130px;
+        width: 100px;
+        height: 100px;
+    }
+    .input{
+        width: 200px;
+        position: relative;
+        left: -20px;
+    }
+    button{
+        position: relative;
+        right: -28px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .search{
+        position: relative;
+        left:275px;
+    }
+    .input{
+        width: 180px;
+        font-size:25px;
+    }
+    .buscar{
+        font-size: 25px;
+    }
+}
