@@ -92,7 +92,7 @@ const CardWeather = ({
   }
 
   const weatherCondition = weather.weather[0].main.toLowerCase();
-  let backgroundVideo = "/videos/soleado.mp4"; // Video por defecto
+  let backgroundVideo = "/public/videos/soleado.mp4"; // Video por defecto
 
   const capitalizeFirstLetter = (string) => {
     if (!string) return "";
@@ -108,18 +108,18 @@ const CardWeather = ({
 
   switch (weatherCondition) {
     case "clear":
-      backgroundVideo = "/videos/soleado.mp4";
+      backgroundVideo = "/public/videos/soleado.mp4";
       break;
     case "clouds":
-      backgroundVideo = "/videos/nublado.mp4";
+      backgroundVideo = "/public/videos/nublado.mp4";
       break;
     case "rain":
     case "drizzle":
     case "thunderstorm":
-      backgroundVideo = "/videos/lluvioso.mp4";
+      backgroundVideo = "/public/videos/lluvioso.mp4";
       break;
     default:
-      backgroundVideo = "/videos/default.mp4"; // Video por defecto
+      backgroundVideo = "/public/videos/default.mp4"; // Video por defecto
   }
 
   return (
