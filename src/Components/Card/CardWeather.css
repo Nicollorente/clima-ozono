@@ -232,8 +232,7 @@
 
     .container .weather-card{
       position: relative;
-      top: 80px;
-      right: 0;
+      right: 20px;
     }
 
     .error{
