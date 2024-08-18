@@ -15,18 +15,29 @@
   }
 
 
+.search{
+  margin-top: 30px;
+}
+
+
+
   .weather-icon {
     width: 80px;  
     height: auto; 
     vertical-align: middle;
   }
 
-.container{
+/* .container{
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 0 -20px 0;
   gap: 5px;
 }
+
+
 
   .card{
     display: flex;
@@ -37,6 +48,9 @@
     height: 400px;
   }
 
+
+
+
   .card .text{
     white-space: nowrap;
     margin-left: -40px;
@@ -44,10 +58,19 @@
 
 
   .description{
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-size: 17px;
     white-space: nowrap; 
+  }
+
+  .description p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   .text-description{
@@ -63,7 +86,67 @@
     white-space: nowrap;
     text-align: center;
     align-items: center;
-  }
+  } */
+
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px ;
+  margin-bottom: -40px;
+}
+
+
+.container .weather-card.weather-card-next{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width:200px;
+  height: 450px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: -60px 0 0 0;
+}
+
+.card .description{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .description .icon{
+  display: flex;
+  justify-content: center;
+}
+
+.card .description .pronostico{
+  display: flex;
+  justify-content: center;
+}
+
+
+.card .description .text-description{
+  white-space: nowrap;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 10px 0 0;
+}
+
 
   .error{
     width: 400px;
@@ -71,55 +154,104 @@
     background-color: black;
   }
 
+@media screen and (max-width:1020px) {
+  #background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
 
-  @media screen and (max-width:480px){
-    .error{
-      position: relative;
-      top:50px;
-    }
-    .weather-card{
-      position: relative;
-      top:30px;
-      right:-110px;
-      margin-top:0;
-    }
-    .card{
-      position: relative;
-      top:50px;
-      width: 200px;
-      height: auto;
-    }
-  
-    .weather-card-next {
-      display: none; 
-    }
+.container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-bottom: 60px;
+}
+}
+
+
+
+  @media screen and (max-width:600px){
+
 
     #background-video video {
       width: 100%;
       height: 100%;
       object-fit: cover; 
     }
+
+
+
+    .container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .container .weather-card{
+      width: 100;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container .weather-card .card{
+      position: relative;
+      right: -40px;
+      top: 80px;
+    }
+
+    .container .weather-card-next .card{
+      display: none;
+    }
+
   }
 
 
+
+  @media screen and (max-width:480px){
+
     #background-video video {
       width: 100%;
       height: 100%;
       object-fit: cover; 
     }
 
-
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px; 
-        position: relative;
-        top:110px;
-      }
-    
-      .card {
-        width: 100%; 
-      }
+    .container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+
+    .container .weather-card{
+      position: relative;
+      top: 80px;
+      right: 0;
+    }
+
+    .error{
+      width: 100%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+    }
+.weather-card-next{
+  display: none;
+}
+
+
+
+  }
+
+
+
+

@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
-import Form from "./Form/Form";
-import CardWeather from "./Card/CardWeather"
+import Form from "../Form/Form";
+import CardWeather from "../Card/CardWeather"
 
 
 const WeatherPanel = () => {

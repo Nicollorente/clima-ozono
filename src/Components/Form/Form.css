@@ -10,6 +10,8 @@
     position: relative;
     top: -100px;
     right: -500px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .search button{
@@ -21,6 +23,35 @@
 .buscar{
     position: relative;
     top:10px;
+}
+
+@media screen and (max-width:1020px ){
+    .search{
+        position: relative;
+        right: 0;
+        top: -40px;
+    }
+}
+
+@media screen and (max-width:600px ) {
+    
+    .search{
+        font-size:25px;
+        position: relative;
+        top:50px;
+        left:125px;
+        width: 100px;
+        height: 100px;
+    }
+    .input{
+        width: 200px;
+        position: relative;
+        left: -20px;
+    }
+    button{
+        position: relative;
+        right: -28px;
+    }
 }
 
 
@@ -41,19 +72,5 @@
     button{
         position: relative;
         right: -28px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .search{
-        position: relative;
-        left:275px;
-    }
-    .input{
-        width: 180px;
-        font-size:25px;
-    }
-    .buscar{
-        font-size: 25px;
     }
 }

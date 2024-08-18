@@ -1,6 +1,7 @@
 import React from "react";
 import Spinner from "../Spinner/Spinner";
 import "./CardWeather.css";
+import "../Navbar/Navbar.css"
 import { Card, CardHeader, Heading, CardBody, Text } from "@chakra-ui/react";
 
 const getWeatherIcon = (cond) => {
@@ -166,9 +167,13 @@ const CardWeather = ({
               </Text>
             </CardHeader>
             <CardBody className="description">
+              <div className="icon">
               {getWeatherIcon(forecast.weather[0].main)}
+              </div>
               <br />
+              <div className="pronostico">
               <p>{capitalizeFirstLetter(forecast.weather[0].description)}</p>
+              </div>
               <br />
               <div className="text-description">
                 <p>Temperatura: {Math.round(forecast.main.temp - 273.15)}°C</p>

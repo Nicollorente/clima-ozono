@@ -3,10 +3,10 @@ import "./Navbar.css"
 const Navbar = () => {
   return (
     <nav className='navbar'>
+      <div className='container'>
         <h1>Clima Ozono</h1>
-        <div>
-            <h3>Predicción Meteorológica</h3>
-        </div>
+            <h2>Predicción Meteorológica</h2>
+      </div>
     </nav>
   )
 }

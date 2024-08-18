@@ -1,7 +1,7 @@
 import './App.css'
 import Form from './Components/Form/Form'
 import Navbar from './Components/Navbar/Navbar'
-import WeatherPanel from './Components/WeatherPanel'
+import WeatherPanel from './Components/WeatherPanel/WeatherPanel'
 
 function App() {
 
