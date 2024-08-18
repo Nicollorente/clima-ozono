@@ -224,16 +224,21 @@
 
     .container{
       width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 60px;
     }
 
 
     .container .weather-card{
       position: relative;
-      right: 20px;
+      top: -30px;
+      right: 30px;
     }
+
+
 
     .error{
       width: 100%;
