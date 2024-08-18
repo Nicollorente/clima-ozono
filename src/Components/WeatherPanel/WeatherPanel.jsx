@@ -65,7 +65,7 @@ const WeatherPanel = () => {
       <Form newLocation={getLocation} />
       
       <video autoPlay muted loop id="background-video">
-        <source src={`/public/videos/${video}`} type="video/mp4" />
+      <source src={`/videos/${video}`} type="video/mp4" />
       </video>
       <CardWeather
         showData={show}
