@@ -1,12 +1,11 @@
 .navbar{
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar .container{
+.navbar .container-nav{
     width: 400px;
     display: flex;
     flex-direction: column;
